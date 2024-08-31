@@ -1,0 +1,472 @@
+@font-face {
+    font-family: calibri;
+    src: url(font/Calibri_Regular.ttf);
+}
+@font-face {
+    font-family: calibriBold;
+    src: url(font/Calibri_Bold.TTF);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+}
+.TEXTBOLD{
+    font-family: calibriBold;
+}
+
+/******************************main parent Style ***************************/
+.main{
+    height: 80vh;
+}
+.main-parent{
+   height: 120vh;
+}
+.header{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.8s;
+    position: fixed;
+    z-index: 10000;
+    padding: 8px 10px;
+}
+.header.scrolled{
+    background-color: #006699;
+}
+.header.scrolled .navbar ul li a{
+    color: white;
+}
+.logo img{
+    width:max-content;
+    height: 60px;
+    margin-left: 20px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+   width: max-content;
+   margin-top: 10px;
+}
+.navbar ul li a{
+    color: #006699;
+    text-decoration: none;
+    margin: 13px;
+    font-size: 18px;
+    transition: all 0.4s;
+    font-weight: 500;
+}
+.navbar ul li a:hover{
+    font-weight: bolder;
+}
+.btns{
+    margin-left: 30px;
+}
+.btns button{
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    margin: 6px;
+    border: white solid 1.6px;
+    border-radius: 4px;
+}
+.btns button:last-child{
+    background-color: transparent;
+    color: white;
+}
+.header .parent{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+/*********************************** A propos Style ******************************/
+.apropos{
+    padding: 20px 0px;
+}
+.apropos .txt{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 00px 15px;
+   background: linear-gradient( #0b8dce 20%, #0F4D80);
+}
+.apropos .txt div:first-child, .apropos .txt div:last-child{
+    width: 45%;
+    font-size: 20px;
+    text-justify:newspaper;
+    color: white;
+    line-height: 30px;
+    word-break: keep-all;
+    text-align: justify;
+    
+}
+/*********************************** END *****************************************/
+
+
+
+
+
+
+
+/******************************* VALUES STYLE *******************************/
+.parentvalues{
+    background: linear-gradient( #0b8dce 20%, #0F4D80);
+    display: flex;
+    justify-content: space-around;
+    height: 450px;
+    align-items: center;
+  }
+ .parentvalues .item{
+    color: white;
+    position: relative;
+    width: 250px;
+    background-color: #0F4D80;
+    height: 330px;
+    border-radius: 11px;
+  }
+.parentvalues .item img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 33%;
+    left: 33%;
+    top: -30px;
+    
+}
+.parentvalues .item h3{
+    margin-top: 60px;
+    text-align: center;
+}
+.parentvalues .item p{
+    padding: 20px;
+}
+/***************************************** END *****************************************/
+
+
+
+
+
+
+
+/********************** Services ****************************/
+
+.services{
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+.services .title,.partner .title{
+    margin: 2px;
+    color: #081853;
+    width: max-content;
+    
+    padding: 2px 8px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.services .title h1,.partner .title h1{
+    border-bottom: #081853 solid 2px;
+    
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.parent{
+    width: 100%;
+    height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.item{
+    text-align: center;
+    width: 320px;
+    margin:   20px;
+    transition: all 1s;
+}
+.item:hover .picture{
+    background: linear-gradient(to left top ,#266AD4 ,#33A9CE ,#1B5EA5);
+    border-radius: 10px;
+}
+.item .picture{
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #081853;
+    box-shadow: rgba(0, 0, 0, 0.15) 4px 3px 15px;
+    transition: all 0.7s;
+    height: 370px;
+}
+.item:hover .picture{
+    color: white;
+}
+.item .picture img{
+    width: 80%;
+    height: 250px;
+}
+
+.parentservice.active{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parentservice{
+    display: none;
+}
+.service_gallery{
+    width: 90%;
+    height: 80%;
+    background-color: #006699;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    border-radius: 11px;
+    align-items: center;
+}
+.service_gallery i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+   
+}
+.service_gallery .text{
+    color: white;
+    font-size: 20px;
+    flex: 50%;
+    padding-left: 35px;
+}
+.service_gallery .pic img{
+    width: 90%;
+    height: 80%;
+}
+.service_gallery .pic{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+}
+ #definition{
+    font-size: 18px;
+ }
+ #pic_service{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+/*************************************** END *****************************************/
+
+
+
+
+
+
+
+
+/*********************** REFERENCES ***************************/
+.reference{
+    padding: 20px 0px;
+}
+.reference h1, .valeur h1, .services h1, .apropos h1{
+    width: max-content;
+    margin: auto;
+    color: #006699;
+    
+}
+.borders{
+    width: 5%;
+    height: 2px;
+    background-color: #006699;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.MySwiper1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide1 {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide1 img {
+    display: block;
+    width: 200px;
+    height:200px;
+    object-fit: contain;
+    padding: 40px 30px;
+    transition: all 0.4s;
+  }
+  .swiper-slide1 img:hover{
+    width: 240px;
+    height: 240px;
+    cursor: pointer;
+  }
+  .swiper.mySwiper1{
+    height: 250px;
+  }
+  /**************************** END **************************************/
+
+
+  
+
+
+
+
+/****************************** TEXT ANIMATION ***************************************/
+.ml9 {
+    
+    font-weight: 200;
+    font-size: 4em;
+}
+  
+.ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+  
+.ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+}
+.coverpic{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( #0b8dce 20%, #0F4D80);
+}
+.coverpic img{
+    width: 300px;
+    height: 300px;
+}
+.coverpic p {
+   
+    color: white;
+    word-break: break-word;
+    text-align: center;
+}
+.letters{
+    font-size: 25px;
+}
+
+/***************************************** END *******************************************/
+
+
+
+
+
+
+
+/*************** FOOTER ****************/
+.footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+.footer .contact{
+    background-color: #006699;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.footer .contact .contactchild{
+    
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+   padding:  15x;
+}
+.footer .contact .contactchild div{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    border-left:  white solid 3px;
+}
+.footer .contact .contactchild div p,.footer .contact .contactchild div a{
+   transition: 0.5s;
+   cursor: pointer;
+   color: white;
+   text-decoration: none;
+}
+.footer .contact .contactchild div p:hover , .footer .contact .contactchild div a:hover{
+    margin-left: 8px;
+    font-size: 18px;
+}
+.footer .contact .contactchild div p i ,.footer .contact .contactchild div a i{
+    padding:  0px 10px ;
+}
+.footer h1{
+    background-color: #006699;
+    color: white;
+    text-align: center;
+}
+.contactchild p{
+    margin: 0;
+}
+.copyright{
+    color: #006699;
+    text-align: center;
+}
+/************************************************** END***********************************/
+
+
+
+.swiper-slide2 img{
+    width: 100%;
+    height: 80%;
+}
+.marginwhite{
+    width: 100%;
+    height: 70px;
+}
+
+

@@ -1,0 +1,315 @@
+@media screen and (max-width:1000px) and (min-width:800px) {
+
+    .navbar ul li a {
+        font-size: 13px;
+        margin: 10px;
+    }
+
+    .btns {
+        margin-left: 20px;
+    }
+
+    .btns button {
+        height: 30px;
+        padding: 6px 9px;
+        font-size: 10px;
+        margin: 5px;
+    }
+
+
+}
+
+@media screen and (max-width:800px) {
+
+    /*********************** main parent ***********************************/
+    .fond h1 {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .fond button {
+        margin-top: 40px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .listbtn {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 3px;
+    }
+
+    .listbtn.active span:nth-child(2) {
+        visibility: hidden;
+    }
+
+    .listbtn.active span:first-child {
+        transform: rotate(45deg) translateY(11.5px);
+        background-color: white;
+        transition: all 0.6s;
+    }
+
+    .listbtn.active span:last-child {
+        transform: rotate(-45deg) translateY(-11.5px);
+        background-color: white;
+        transition: all 0.6s;
+    }
+
+    .listbtn span {
+        width: 35px;
+        height: 3px;
+        background-color: #006699;
+        border-radius: 3px;
+        margin: 3px;
+
+    }
+
+    .header.active {
+        background: #006699;
+    }
+
+    .navbar.active {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .navbar.active ul li {
+        margin: 20px;
+    }
+
+    .navbar.active ul li a {
+        color: white;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .btns button {
+        margin: 20px 0px;
+
+    }
+
+    .header .parent {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        align-items: center;
+        height: 45px;
+    }
+
+    .header {
+        flex-direction: column;
+        position: fixed;
+        z-index: 10000;
+    }
+
+    .header.scrolled .listbtn span {
+        background-color: white;
+        transition: all 0.8s;
+    }
+
+    .logo img {
+        width: max-content;
+        height: 50px;
+        margin-left: 0px;
+    }
+   
+   
+    .borders{
+        width: 10%;
+    }
+    .main-parent{
+        height: 42vh;
+    }
+
+    /********************************** END ************************************/
+
+
+
+
+
+
+    /*********************************** A propos Style ******************************/
+    .apropos{
+        padding: 10px 0px;
+    }
+    .apropos .txt{
+        flex-direction: column;
+    }
+    .apropos .txt div{
+        word-break:break-all;
+    }
+    .apropos .txt div:first-child, .apropos .txt div:last-child{
+        width: 98%;
+        margin: auto;
+        font-size: 17px;
+        line-height: 30px;
+    }
+  
+    /********************************** END ************************************/
+
+
+
+
+
+
+
+    /*********************************** Services Styling ***************************/
+    .item {
+        width: 90%;
+        margin: 0px;
+    }
+
+    .item .picture {
+        display: flex;
+        border: none;
+        box-shadow: none;
+        align-items: flex-start;
+        padding: 10px;
+        height: max-content;
+    }
+
+    .item .picture div {
+        display: flex;
+        align-items: center;
+    }
+
+    .services .parent {
+        display: block;
+        padding: 30px 5px;
+    }
+
+    .item .picture img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .item .picture p {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .service_gallery {
+        flex-direction: column;
+        height: 95%;
+        width: 98%;
+    }
+
+    .service_gallery .pic {
+        flex: 90%;
+    }
+
+    .service_gallery .pic img {
+        height: 95%;
+        width: 100%;
+
+
+    }
+
+    .service_gallery .text {
+        font-size: 18px;
+        padding: 20px 0px;
+        flex: 90%;
+    }
+
+    .item .picture {
+        box-shadow: rgba(0, 0, 0, 0.15) 4px 3px 15px;
+        margin: 20px;
+        width: 100%;
+    }
+
+    #definition {
+        font-size: 15px;
+    }
+
+    /****************************** END ************************************/
+
+
+
+
+    /********************************* Values **************************************/
+    .parentvalues {
+        height: max-content;
+        padding: 30px 10px;
+        flex-direction: column;
+    }
+
+    .parentvalues .item {
+        width: 90%;
+        height: 250px;
+        margin: 20px;
+    }
+
+    /********************************* END ***********************************************/
+
+
+
+
+
+
+    /******************************* References *************************************/
+    .swiper-slide1 img {
+        width: 120px;
+    }
+    .swiper-slide2 img{
+       
+    }
+
+    /******************************** END  *********************************************/
+
+
+
+
+
+
+
+
+
+    /***********************TEXT ANImATION **********************************/
+    .letters{
+        font-size: 11px;
+    }
+    /*****************************END *********************************/
+
+
+
+
+
+    /*************** footer ***********************/
+
+    .footer .contact .contactchild {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer .contact .contactchild div {
+        border: none;
+    }
+
+    .footer .contact .contactchild div a {
+        padding: 5px 0px;
+    }
+
+    /************************** END ************************/
+
+
+   
+}
